@@ -1,10 +1,17 @@
 import React from 'react';
-import { MainTheme } from '../ideas';
+import { BrowserRouter } from 'react-router-dom';
+
+import { Router } from './Router';
 
 import './app.css'
 
 export const App = () => {
   return (
-      <MainTheme />
+    <>
+        <BrowserRouter>
+      <Router />
+
+    </BrowserRouter>
+    </>
   );
 }

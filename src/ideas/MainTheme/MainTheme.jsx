@@ -2,11 +2,14 @@ import React from 'react';
 import { styled } from '@linaria/react';
 
 import { logo512 } from '../../images';
+import { useNavigate } from 'react-router-dom';
 
 
 export const MainTheme = () => {
+  const navigate = useNavigate();
   return (
     <Content>
+      <button onClick={() => navigate('spiner')}>next</button>
       <img src={logo512} alt="logo" />
       <span>Так себе идеи...</span>
     </Content>
