@@ -7,11 +7,8 @@ import './app.css'
 
 export const App = () => {
   return (
-    <>
-        <BrowserRouter>
+    <BrowserRouter basename={PUBLIC_PATH}>
       <Router />
-
     </BrowserRouter>
-    </>
   );
 }

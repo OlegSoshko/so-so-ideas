@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom';
 
 import { MainTheme, GlowingRing } from '../ideas';
 
-
 export const Router = () => {
   return (
     <Routes>

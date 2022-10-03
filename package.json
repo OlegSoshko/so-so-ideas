@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "homepage": "https://olegsoshko.github.io/so-so-ideas",
   "scripts": {
-    "start": "webpack-dev-server --config configs/webpack.config.js",
-    "build": "webpack --mode production --config configs/webpack.config.js",
+    "start": "webpack-dev-server --config configs/webpack.develop.config.js",
+    "build": "webpack --config configs/webpack.deploy.config.js",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
