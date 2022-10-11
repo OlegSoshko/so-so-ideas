@@ -13,7 +13,7 @@ export const Menu = () => {
       <MenuWrapper className={toRight}>
         {
           menu.map(({label, link}) => (
-            <MenuItem label={label} link={link}/>
+            <MenuItem key={link} label={label} link={link}/>
           ))
         }
       </MenuWrapper>
@@ -61,21 +61,9 @@ const MenuWrapper = styled.ul`
   display: flex;
   gap: 10px;
   justify-content: space-around;
-  /* animation: 30s linear 100ms infinite;
-  animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-
-/* 
-  @keyframes scroll {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-      transform: translateX(100%);
-    }
-  } */
 `;
 
 const toRight = css`
