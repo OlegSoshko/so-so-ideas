@@ -1,16 +1,12 @@
 import { styled } from '@linaria/react';
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import { Spiner } from './Spiner';
 
-export const GlowingRing = () => {
-  const navigate = useNavigate();
 
+export const GlowingRing = () => {
   return (
     <Content>
-      <button onClick={() => navigate(-1)}>back</button>
-
       <Container>
         <Spiner />
         <Spiner />
